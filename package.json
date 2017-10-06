@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Download Mapbox styles, sprites, glyphs (fonts) and tiles for offline usage",
   "main": "index.js",
-  "bin": "./bin/mapbox-style",
+  "bin": "./bin/mapbox-style.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
