@@ -44,7 +44,21 @@ if (cmd === 'download') {
   const styleFile = path.join(root, 'style.json')
   serve(root, styleFile, argv.port)
 } else {
-  onError(new Error('Must provide an argument `download` or `serve` e.g. `mapbox-style download`'))
+  console.log(`USAGE: mapbox-style <command> [options]
+
+  download STYLE_URL [options]
+    -b, --bounds        bounding box in the form of "lat, lon, lat, lon"
+    -o, --output        the output path for the styles
+    -z, --minzoom       the minimum zoom for tile downloading [1,16]
+    -Z, --maxzoom       the maximum zoom for tile downloading [1,16]
+    -t, --token         your MapBox API token
+
+  serve
+    -p, --port          the port to use for the server
+
+  help
+    see this help text
+`)
 }
 
 function onError (err) {
