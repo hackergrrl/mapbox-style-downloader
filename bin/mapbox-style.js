@@ -14,6 +14,10 @@ const argv = require('minimist')(process.argv.slice(2), {
     b: 'bounds',
     o: 'output'
   },
+  string: [
+    'bounds',
+    'token'
+  ],
   default: {
     port: 8080
   }
