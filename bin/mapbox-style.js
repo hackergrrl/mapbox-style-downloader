@@ -2,8 +2,8 @@
 
 const path = require('path')
 
-const download = require('../lib/download')
-const serve = require('../lib/serve')
+const download = require('../').download
+const serve = require('../').serve
 
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
