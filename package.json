@@ -7,7 +7,8 @@
     "mapbox-style": "./bin/mapbox-style.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run dependency-check",
+    "dependency-check": "dependency-check package.json && dependency-check package.json --unused --no-dev"
   },
   "keywords": [
     "mapbox",
@@ -20,30 +21,23 @@
   "author": "Gregor MacLennan",
   "license": "MIT",
   "dependencies": {
-    "@mapbox/tilejson": "^1.0.4",
-    "@mapbox/tilelive": "^5.12.6",
-    "agentkeepalive": "^3.1.0",
-    "collect-stream": "^1.2.1",
-    "concat-stream": "^1.6.0",
-    "d3-queue": "^3.0.5",
-    "ecstatic": "^2.1.0",
-    "finalhandler": "^1.0.2",
-    "fs-extra": "^4.0.2",
+    "@mapbox/tilejson": "^1.1.0",
+    "@mapbox/tilelive": "^6.0.0",
+    "d3-queue": "^3.0.7",
+    "debug": "^3.1.0",
+    "ecstatic": "^3.2.0",
+    "fs-extra": "^5.0.0",
     "getport": "^0.1.0",
-    "mapbox-gl": "^0.37.0",
-    "mbtiles": "^0.9.0",
-    "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "object-assign": "^4.1.1",
-    "pump": "^1.0.2",
-    "request": "^2.81.0",
-    "requestretry": "^1.12.0",
-    "router": "^1.3.0",
-    "tilelive": "^5.12.3",
-    "tilelive-cache": "^0.7.1",
+    "pump": "^3.0.0",
+    "request": "^2.85.0",
     "tilelive-file": "0.0.3",
-    "tilelive-modules": "^0.3.3",
-    "tilelive-streaming": "^0.7.5",
-    "traverse": "^0.6.6"
+    "tilelive-streaming": "^0.7.7",
+    "traverse": "^0.6.6",
+    "yargs-parser": "^10.0.0"
+  },
+  "devDependencies": {
+    "dependency-check": "^3.1.0"
   }
 }

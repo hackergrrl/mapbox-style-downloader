@@ -5,7 +5,7 @@ const path = require('path')
 const download = require('../').download
 const serve = require('../').serve
 
-const argv = require('minimist')(process.argv.slice(2), {
+const argv = require('yargs-parser')(process.argv.slice(2), {
   alias: {
     p: 'port',
     t: 'token',
