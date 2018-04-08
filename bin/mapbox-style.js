@@ -12,7 +12,9 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
     z: 'minzoom',
     Z: 'maxzoom',
     b: 'bounds',
-    o: 'output'
+    o: 'output',
+    u: 'minutf',
+    U: 'maxutf'
   },
   string: [
     'bounds',
@@ -52,6 +54,8 @@ if (cmd === 'download') {
     -z, --minzoom       the minimum zoom for tile downloading [1,16]
     -Z, --maxzoom       the maximum zoom for tile downloading [1,16]
     -t, --token         your MapBox API token
+    -u, --minutf        minimum UTF-8 char code to download glyphs for
+    -U, --maxutf        maximum UTF-8 char code to download glyphs for
 
   serve
     -p, --port          the port to use for the server
