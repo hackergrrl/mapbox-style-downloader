@@ -3,7 +3,7 @@
 Download mapbox styles, tiles, glyphs, and sprites for offline use.
 
 ```
-npm install -g mapbox-style
+npm install -g mapbox-style-downloader
 ```
 
 ## Usage
