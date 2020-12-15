@@ -25,7 +25,7 @@
     "@mapbox/tilelive": "^6.0.0",
     "d3-queue": "^3.0.7",
     "debug": "^3.1.0",
-    "ecstatic": "^3.2.0",
+    "ecstatic": "^4.1.4",
     "fs-extra": "^5.0.0",
     "getport": "^0.1.0",
     "mkdirp": "^0.5.1",
